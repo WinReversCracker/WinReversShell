@@ -1,5 +1,5 @@
 param(
-[string]$Lhost="10.10.10.1",[string]$Lport="4444",[string]$web,[switch]$netcat,[switch]$python,[switch]$python3,[string]$bash,[switch]$perl,[switch]$php,[switch]$ruby,[switch]$java,[switch]$xterm,[switch]$socat,[string]$metasploit,[switch]$PowershellICMP,[switch]$PowershellTCP,[switch]$PowershellUDP
+[string]$Lhost="10.10.10.1",[string]$Lport="4444",[switch]$web,[string]$netcat,[switch]$python,[switch]$python3,[string]$bash,[switch]$perl,[switch]$php,[switch]$ruby,[switch]$java,[switch]$xterm,[switch]$socat,[switch]$metasploit,[switch]$PowershellICMP,[switch]$PowershellTCP,[switch]$PowershellUDP
 )
 
 $metasploit_perl = @"
